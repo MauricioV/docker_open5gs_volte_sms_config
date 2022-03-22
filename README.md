@@ -37,7 +37,7 @@ For reference, the Docker host VM on VirtualBox I have tried is as follows:
 
 For eNodeB, set static routing to eNodeB for packets going from eNodeB to the Docker host network (`172.22.0.0/24`).
 ```
-# ip route add 172.22.0.0/24 via 192.168.0.20
+# ip route add 172.22.0.0/24 via 192.168.0.130
 ```
 If eNodeB does not have a static routing setting function, build a network so that the Docker host becomes the default GW.
 
